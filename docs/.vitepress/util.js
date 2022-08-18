@@ -16,7 +16,7 @@ const sidebarGuide = () => {
       items: [
         { text: 'Markdown', link: '/guide/markdown' },
         { text: 'Frontmatter', link: '/guide/frontmatter' },
-        { text: 'API Reference', link: '/guide/api' },
+        { text: 'API', link: '/guide/api' },
       ],
     },
     {
