@@ -3,7 +3,7 @@ import { sidebarGuide, sidebarConfig } from './util'
 export default defineConfig({
   lang: 'en-US',
   title: 'Eli VitePress',
-  base: './',
+  base: '/vitepress-starter/',
   description: 'Vite & Vue powered static site generator.',
   // markdown: {
   //   theme: 'material-palenight',
