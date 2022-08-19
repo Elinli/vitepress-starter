@@ -23,7 +23,7 @@ const sidebarGuide = () => {
       text: 'Theme',
       collapsible: true,
       items: [
-        { text: 'Nav', link: '/guide/theme-nav' },
+        { text: 'NavBar', link: '/guide/theme-nav' },
         { text: 'Sidebar', link: '/guide/theme-sidebar' },
       ],
     },
