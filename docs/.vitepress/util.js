@@ -1,10 +1,13 @@
+import { version } from '../../package.json'
+
 const sidebarGuide = () => {
   return [
     {
       text: 'Introduction',
       collapsible: true,
       items: [
-        { text: 'What is VitePress?', link: '/guide/what-is-vitepress' },
+        { text: 'Why Exist?', link: '/guide/why-exist' },
+        { text: 'What is Jsonserver?', link: '/guide/what-is-jsonserver' },
         { text: 'Getting Started', link: '/guide/getting-started' },
         { text: 'Configuration', link: '/guide/configuration' },
         { text: 'Deploying', link: '/guide/deploying' },
@@ -53,4 +56,24 @@ const sidebarConfig = () => {
     },
   ]
 }
-export { sidebarGuide, sidebarConfig }
+
+function nav() {
+  return [
+    { text: 'Guide', link: '/guide/what-is-jsonserver', activeMatch: '/guide/' },
+    { text: 'Configs', link: '/config/introduction', activeMatch: '/config/' },
+    {
+      text: version,
+      items: [
+        {
+          text: 'Changelog',
+          link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md',
+        },
+        {
+          text: 'Contributing',
+          link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md',
+        },
+      ],
+    },
+  ]
+}
+export { sidebarGuide, sidebarConfig, nav }

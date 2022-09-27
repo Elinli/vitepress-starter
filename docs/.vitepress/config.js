@@ -1,10 +1,10 @@
 import { defineConfig } from 'vitepress'
-import { sidebarGuide, sidebarConfig } from './util'
+import { sidebarGuide, sidebarConfig,nav } from './util'
 export default defineConfig({
   lang: 'en-US',
-  title: 'Eli VitePress',
+  title: 'Blog',
   base: '/vitepress-starter/',
-  description: 'Vite & Vue powered static site generator.',
+  description: 'Get a full fake REST API with zero coding in less than 30 seconds.',
   // markdown: {
   //   theme: 'material-palenight',
   //   lineNumbers: true,
@@ -24,18 +24,14 @@ export default defineConfig({
       text: 'Edit this page on GitHub',
     },
 
-    nav: [
-      { text: 'Guide', link: '/guide' },
-      { text: 'Configs', link: '/configs' },
-      { text: 'Changelog', link: 'https://github.com/...' },
-    ],
+    nav: nav(),
     sidebar: {
       '/guide/': sidebarGuide(),
       '/config/': sidebarConfig(),
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      { icon: 'github', link: 'https://github.com/typicode/json-server#getting-started' },
       { icon: 'twitter', link: 'https://github.com/vuejs/vitepress' },
       // You can also add custom icons by passing SVG as string:
       {
